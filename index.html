@@ -137,14 +137,14 @@
 										<div class="swiper-container">
 											<div class="swiper-wrapper">
 												<div class="swiper-slide">
-													<p class="aui-noticebar-text">K0/OK FOMO3D 2022/04/17 22:18:00 online</p>
+													<p class="aui-noticebar-text">K0/OK FOMO3D V2 2022/04/18 21:00:00 online</p>
 												</div>
 												<div class="swiper-slide">
-													<p class="aui-noticebar-text">Congratulations to 0x...6784 was airdropped 3.37 BNB</p>
+													<p class="aui-noticebar-text">Congratulations to 0x...<span class="win_airdrop_addr">7685</div> was airdropped <span class="win_airdrop_num">3.12</div> BNB</p>
 												</div>
-												<div class="swiper-slide">
+<!-- 												<div class="swiper-slide">
 													<p class="aui-noticebar-text">Congratulations to 0x...d0d6 was airdropped 3.0 BNB</p>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
@@ -841,8 +841,13 @@
                     console.log('RoundInfo');
                     
                     console.log(res);
+			    
+			    
+					    
                     
-                  
+                    $('.win_airdrop_addr').html((RoundInfo[0]).substr(-4, 4));
+			    
+		    $('.win_airdrop_num').html('3.26');	    
                     
                     $('.top_airdrop_amount').html(toETH0(RoundInfo[13]/1000));
                     
