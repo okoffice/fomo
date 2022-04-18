@@ -532,7 +532,7 @@
 				
 				<div class="aui-footer-list"  index="3" @click.stop="changeNav($event)" ><i class="iconfont icontamplate"></i><p>邀请</p></div>				
 				
-				<a class="aui-footer-list" target="_blank" href="http://ok.kill0.club/OKFomo3d.pdf"><i class="iconfont iconheadlines"></i><p>白皮书</p></a>
+				<a class="aui-footer-list" target="_blank" href="https://okoffice.github.io/fomo/OKFomo3d.pdf"><i class="iconfont iconheadlines"></i><p>白皮书</p></a>
 				
 				<a class="aui-footer-list" target="_blank" href="#"><i class="iconfont icondoc"></i><p>文档</p></a>
 				
@@ -946,7 +946,7 @@
  
                     
 					if(uid>0){
-                    $('#invitecode').val('http://ok.kill0.club/?ref='+uid)
+                    $('#invitecode').val('https://okoffice.github.io/fomo/?ref='+uid)
 					}
 					else{
                     $('#invitecode').val('请先参与购买种子 然后申请')
@@ -1788,10 +1788,10 @@ function setmenu(){
 					//console.log(ret);
 					switch (ret.index){
 						case 0:
-							aui.openWin('http://ok.kill0.club/');
+							aui.openWin('https://okoffice.github.io/fomo/');
 							break;
 						case 1:
-							aui.openWin('http://ok.kill0.club/OKFomo3d.pdf');
+							aui.openWin('https://okoffice.github.io/fomo/OKFomo3d.pdf');
 							break;
 						<!-- case 2: -->
 							<!-- aui.openWin('https://me.csdn.net/weixin_43838488'); -->
@@ -1839,7 +1839,7 @@ function setmenu(){
 						//invitecode
 						
 						if(uid>0){
-						_this.text = 'http://ok.kill0.club/?ref='+uid;    
+						_this.text = 'https://okoffice.github.io/fomo/?ref='+uid;    
 						}
 						else{
 						 _this.text = '';   
@@ -1865,7 +1865,7 @@ function setmenu(){
 						copy(){
 							var _this = this;	
 							//if(!aui.isDefine(_this.text)){aui.toast({msg: '请输入文字内容'}); return;}
-							copyurl = 'http://ok.kill0.club/?ref='+uid
+							copyurl = 'https://okoffice.github.io/fomo/?ref='+uid
 							aui.copy(copyurl);
 							console.log(copyurl);
 							if(uid>0){
